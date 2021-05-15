@@ -1,0 +1,18 @@
+[package]
+name = "bevy_task_pool_benchmark"
+version = "0.1.0"
+authors = ["GreyGoo <zsw_shelter@live.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+
+
+[dev-dependencies]
+criterion = "0.3"
+bevy_tasks = { git = "https://github.com/IGreyGooI/bevy.git", branch = "priority_executor" }
+#bevy_tasks = { git = "https://github.com/bevyengine/bevy.git", branch = "main" }
+
+[[bench]]
+name = "bevy_task_pool_benchmark"
+harness = false
